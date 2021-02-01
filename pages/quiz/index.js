@@ -54,9 +54,8 @@ function LoadingWidget() {
       <Widget.Header>
         Carregando...
       </Widget.Header>
-
       <Widget.Content>
-        [Desafio do Loading]
+{/*         <img src="https://media.giphy.com/media/cnzP4cmBsiOrccg20V/giphy.gif" /> */}
       </Widget.Content>
     </Widget>
   );
@@ -203,7 +202,7 @@ export default function QuizPage() {
           />
         )}
 
-        {screenState === screenStates.LOADING && <LoadingWidget />}
+        {screenState === screenStates.LOADING && <LoadingWidget  />}
 
         {screenState === screenStates.RESULT && <ResultWidget results={results} />}
       </QuizContainer>
